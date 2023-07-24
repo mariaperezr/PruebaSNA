@@ -49,10 +49,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="FormularioSolicitud.php">Tareas</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="listadoServicios.php">Usuarios</a>
+                    <a class="nav-link" href="FormularioSolicitud.php">Generar Servicio</a>
                 </li>
             </ul>
             <ul class="navbar-nav ms-auto">
@@ -71,6 +68,14 @@
 <div class="col-sm-4" id="contenedorFormularios"  >
     <div class="container">
         <form method="post" class="needs-validation">
+
+            <div class="mb-3">
+                <label for="pwd" class="form-label">Nombre Empresa:</label>
+                <input type="text" class="form-control" id="txt_NombreEmpresa" placeholder="Ingrese el nombre de la empresa" name="txt_NombreEmpresa" required>
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">Please fill out this field.</div>
+            </div>
+
             <div class="mb-3 mt-3">
                 <label for="uname" class="form-label">Fecha Servicio:</label>
                 <input type="date" class="form-control" id="txt_fechaServicio" placeholder="Ingrese la fecha del Servicio" name="txt_fechaServicio" required>
@@ -79,8 +84,8 @@
             </div>
 
             <div class="mb-3">
-                <label for="pwd" class="form-label">Apellidos Usuario:</label>
-                <input type="text" class="form-control" id="txt_apellidousuario" placeholder="Ingrese la descripcion" name="txt_apellidousuario" required>
+                <label for="pwd" class="form-label">Valor Servicio:</label>
+                <input type="number" class="form-control" id="txt_ValorServicio" placeholder="Ingrese el valor del servicio" name="txt_ValorServicio" required>
                 <div class="valid-feedback">Valid.</div>
                 <div class="invalid-feedback">Please fill out this field.</div>
             </div>

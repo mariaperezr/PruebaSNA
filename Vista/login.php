@@ -30,7 +30,7 @@
 
 <body>
 
-<div class="container">
+<div class="container co">
     <h2>Iniciar Sesión</h2>
     <form id="formLogin">
         <div class="form-group">

@@ -113,6 +113,19 @@
                 <div class="invalid-feedback">Please fill out this field.</div>
             </div>
 
+            <div class="mb-3">
+                <label for="pwd" class="form-label"> Cantidad De Servicios:</label>
+                <input type="number" class="form-control" id="txt_cantServicios" placeholder="Ingrese la cantidad de servicios" name="txt_cantServicios" required>
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">Please fill out this field.</div>
+            </div>
+
+            <div class="mb-3">
+                <label for="pwd" class="form-label">Seleccione el Tipo de Automotor</label>
+                <select select id="selectusuarioform" class="form-select" aria-label="Default select example">
+                    
+                </select>
+            </div>
             
         </div>
 

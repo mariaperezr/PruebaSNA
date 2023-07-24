@@ -1,0 +1,63 @@
+-- Tabla de tipos de automotor
+CREATE TABLE tipos_automotor (
+  id_tipo_automotor INT PRIMARY KEY AUTO_INCREMENT,
+  tipo VARCHAR(50)
+);
+
+-- Tabla de automotores
+CREATE TABLE automotores (
+  id_automotor INT PRIMARY KEY AUTO_INCREMENT,
+  id_tipo_automotor INT,
+  placa VARCHAR(20) UNIQUE,
+  color VARCHAR(50),
+  serial_motor VARCHAR(100),
+  toneladas FLOAT,
+  valor_km DECIMAL(10, 2),
+  FOREIGN KEY (id_tipo_automotor) REFERENCES tipos_automotor(id_tipo_automotor)
+);
+
+-- Tabla de conductores
+CREATE TABLE conductores (
+  id_conductor INT PRIMARY KEY AUTO_INCREMENT,
+  nombre VARCHAR(100),
+  tipo_contrato ENUM('Planta', 'Flotante')
+);
+
+-- Tabla de cargos administrativos
+CREATE TABLE cargos_administrativos (
+  id_cargo INT PRIMARY KEY AUTO_INCREMENT,
+  nombre VARCHAR(100)
+);
+
+-- Tabla de empleados
+CREATE TABLE empleados (
+  id_empleado INT PRIMARY KEY AUTO_INCREMENT,
+  id_cargo INT,
+  nombre VARCHAR(100),
+  FOREIGN KEY (id_cargo) REFERENCES cargos_administrativos(id_cargo)
+);
+
+-- Tabla de empresas
+CREATE TABLE empresas (
+  id_empresa INT PRIMARY KEY AUTO_INCREMENT,
+  nombre VARCHAR(100)
+);
+
+-- Tabla de servicios solicitados
+CREATE TABLE servicios_solicitados (
+  id_servicio INT PRIMARY KEY AUTO_INCREMENT,
+  id_empresa INT,
+  fecha_solicitud DATE,
+  valor DECIMAL(10, 2),
+  FOREIGN KEY (id_empresa) REFERENCES empresas(id_empresa)
+);
+
+-- Tabla de detalles de servicios solicitados (relación muchos a muchos entre servicios y automotores)
+CREATE TABLE detalles_servicio (
+  id_detalle INT PRIMARY KEY AUTO_INCREMENT,
+  id_servicio INT,
+  id_automotor INT,
+  cantidad INT,
+  FOREIGN KEY (id_servicio) REFERENCES servicios_solicitados(id_servicio),
+  FOREIGN KEY (id_automotor) REFERENCES automotores(id_automotor)
+);

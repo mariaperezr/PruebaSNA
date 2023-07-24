@@ -31,6 +31,24 @@
 <body>
 
 <br>
+<div class="container mt-3">
+        <h2 class=" text-center link-success">GOOGLE CHROME COMPANY</a></h2>
+        <img src="Gifs/giphy.gif" class="rounded float-start imagenpequeña" style="width: 150px;">
+        <br><br>
+        <br><br>
+        <p><strong><em>Bienvenidos sean todos!</em></strong></p>
+        <br><br>
+        <div class="contenedorInfo">
+            <nav>
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                  <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Iniciar Sesion</button>
+                  <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Registrarse</button>
+                </div>
+            </nav>
+        <br>
+        <br>
+
+    </div>
 <div class="container col-sm-4">
     <h2>Iniciar Sesión</h2>
     <br>

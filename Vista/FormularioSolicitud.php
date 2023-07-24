@@ -54,6 +54,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="listadoServicios.php">Usuarios</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="usuario.php">Usuarios</a>
+                    </li>
                 </ul>
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">

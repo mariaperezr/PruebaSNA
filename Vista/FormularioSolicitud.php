@@ -63,7 +63,9 @@
     <!-- <div class="container">       -->
     <!-- </div>
     </div> -->
-
+<br>
+<h3>Ingreso Datos Servicio</h3>
+<br>
 <div class="row">
 <div class="col-sm-4" id="contenedorFormularios"  >
     <div class="container">
@@ -84,24 +86,34 @@
             </div>
 
             <div class="mb-3">
-                <label for="pwd" class="form-label">Valor Servicio:</label>
-                <input type="number" class="form-control" id="txt_ValorServicio" placeholder="Ingrese el valor del servicio" name="txt_ValorServicio" required>
+                <label for="pwd" class="form-label">Lugar de Salida:</label>
+                <input type="text" class="form-control" id="txt_LugarSalida" placeholder="Ingrese el lugar de salida" name="txt_LugarSalida" required>
                 <div class="valid-feedback">Valid.</div>
-                <div class="invalid-feedback">Please fill out this field.</div>
-            </div>
-
-            <div class="mb-3">
-                <label for="pwd" class="form-label">Correo:</label>
-                <input type="text" class="form-control" id="txt_correo" placeholder="Ingrese la descripcion" name="txt_correo" required>
-                <div class="valid-feedback">Valid.</div>
-                <div class="invalid-feedback">Please fill out this field.</div>
-            </div>
-
-            <div class="mb-3">
-            <label for="pwd" class="form-label">Contraseña:</label>
-            <input type="password" class="form-control" id="txt_password" placeholder="Ingrese la contraseña" name="txt_password" required>
-            <div class="valid-feedback">Valid.</div>
             <div class="invalid-feedback">Please fill out this field.</div>
+            
+
+            <div class="mb-3">
+                <label for="pwd" class="form-label">Lugar de Destino:</label>
+                <input type="text" class="form-control" id="txt_LugarDestino" placeholder="Ingrese el lugar de destino" name="txt_LugarDestino" required>
+                <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Please fill out this field.</div>
+
+
+            <div class="mb-3">
+                <label for="pwd" class="form-label">Distancia en Kilometros:</label>
+                <input type="number" class="form-control" id="txt_DistKm" placeholder="Ingrese la distancia" name="txt_DistKm" required>
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">Please fill out this field.</div>
+            </div>
+
+            <div class="mb-3">
+                <label for="pwd" class="form-label"> Cantidad Toneladas:</label>
+                <input type="number" class="form-control" id="txt_cantToneladas" placeholder="Ingrese la cantidad de toneladas" name="txt_cantToneladas" required>
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">Please fill out this field.</div>
+            </div>
+
+            
         </div>
 
             <button type="button" id="btnGuardarUsuario" class="btn btn-primary">Enviar</button>

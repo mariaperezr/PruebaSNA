@@ -30,8 +30,10 @@
 
 <body>
 
-<div class="container co">
+<br>
+<div class="container col-sm-4">
     <h2>Iniciar Sesión</h2>
+    <br>
     <form id="formLogin">
         <div class="form-group">
             <label for="correo">Correo electrónico:</label>
@@ -41,6 +43,7 @@
             <label for="password">Contraseña:</label>
             <input type="password" class="form-control" id="password" name="password" required>
         </div>
+        <br>
         <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
     </form>
 </div>

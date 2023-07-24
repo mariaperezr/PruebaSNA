@@ -43,13 +43,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="FormularioSolicitud.php">Tareas</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="listadoServicios.php">Usuarios</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="usuario.php">Usuarios</a>
+                        <a class="nav-link" href="listadoServicios.php">Contenido Administrador</a>
                     </li>
                 </ul>
                 <ul class="navbar-nav ms-auto">
